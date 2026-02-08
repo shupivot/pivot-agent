@@ -1,0 +1,57 @@
+<svg width="1500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 黑色背景 -->
+  <rect width="1500" height="500" fill="#000000"/>
+  
+  <!-- 定义中心点 -->
+  <defs>
+    <style>
+      .orbit { fill: none; stroke: white; stroke-width: 2; }
+      .node { fill: none; stroke: white; stroke-width: 2; }
+      .axis { stroke: white; stroke-width: 1; opacity: 0.5; }
+      .hub { fill: white; }
+      .core { fill: #7c9cff; }
+    </style>
+  </defs>
+  
+  <!-- 中心坐标 750, 250 -->
+  
+  <!-- 轨道圈 -->
+  <circle cx="750" cy="250" r="120" class="orbit"/>
+  <circle cx="750" cy="250" r="200" class="orbit"/>
+  <circle cx="750" cy="250" r="280" class="orbit"/>
+  
+  <!-- 轨道节点 - 内圈 (r=120) -->
+  <circle cx="870" cy="250" r="8" class="node"/>
+  <circle cx="646" cy="146" r="8" class="node"/>
+  <circle cx="646" cy="354" r="8" class="node"/>
+  
+  <!-- 轨道节点 - 中圈 (r=200) -->
+  <circle cx="923" cy="150" r="8" class="node"/>
+  <circle cx="577" cy="150" r="8" class="node"/>
+  <circle cx="750" cy="450" r="8" class="node"/>
+  
+  <!-- 轨道节点 - 外圈 (r=280) -->
+  <circle cx="1030" cy="250" r="8" class="node"/>
+  <circle cx="610" cy="54" r="8" class="node"/>
+  <circle cx="610" cy="446" r="8" class="node"/>
+  
+  <!-- 主轴线 -->
+  <line x1="750" y1="250" x2="1100" y2="250" class="axis"/>
+  <line x1="750" y1="250" x2="400" y2="250" class="axis"/>
+  <line x1="750" y1="250" x2="750" y2="0" class="axis"/>
+  <line x1="750" y1="250" x2="750" y2="500" class="axis"/>
+  
+  <!-- 左侧装饰弧 -->
+  <path d="M 144 194 A 80 80 0 0 1 144 306" class="orbit"/>
+  
+  <!-- 右侧装饰弧 -->
+  <path d="M 1356 194 A 80 80 0 0 0 1356 306" class="orbit"/>
+  
+  <!-- 中央枢纽 -->
+  <circle cx="750" cy="250" r="15" class="hub"/>
+  <circle cx="750" cy="250" r="6" class="core"/>
+  
+  <!-- 微小装饰点（呼应头像中的小圆） -->
+  <circle cx="950" cy="250" r="3" fill="white" opacity="0.6"/>
+  <circle cx="550" cy="250" r="3" fill="white" opacity="0.6"/>
+</svg>
